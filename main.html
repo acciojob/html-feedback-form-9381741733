@@ -8,18 +8,21 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h2> Feedback form </h2>
-	<form action="/submit" method="post">
+	<h1>Feedback Form</h1>
+    <form action="/submit-feedback" method="post">
+        <label for="name">Name:</label>
+        <input type="Text" id="name" name="name" minlength="3" maxlength="50" required>
 
-<label for="name">Name:</label>
-<input type="text"id="name" name="name" minlength="3" maxlength="50" required>
-<label for ="Portfolio">Portfolio:</label>
-<input type="URL" id="portfolio"  name="portfolio" required>
-<label for="favColor">Favourite Color:</label>
-<input type="Color" id="favColor"  name="favColor"required>
-<label for="Likeness" >Likeness:</label>
-<input type="Range" id="likeness"  name="likeness" min="1" max="100" required>
-<button type="submit">submit</button>
+        <label for="portfolio">Portfolio:</label>
+        <input type="URL" id="portfolio" name="portfolio" required>
+
+        <label for="favColor">Favorite Color:</label>
+        <input type="Color" id="favColor" name="favColor">
+
+        <label for="likeness">Likeness (1-100):</label>
+        <input type="Range" id="likeness" name="likeness" min="1" max="100">
+
+        <button type="submit">Submit</button>
 </form>
     
     <script type="text/javascript" src="./script.js">
