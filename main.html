@@ -8,16 +8,16 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form action="/submit-feedback" method="post">
-<h2> Feedback Form </h2>
-<lable for="name">Name:</lable>
-<input type="text"id="name" name="name"minlength="3" maxlength="50" required>
-<lable for ="Portfolio">Portfolio</lable>
-<input type="URL" id="portfolio" required>
-<lable for="favColor">Favourite Color</lable>
-<input type="Color" id="favColor" required>
-<lable for="Likeness" min="1" max="100">Likeness</lable>
-<input type="Range" id="likeness" required>
+	<form action="/submit" method="post">
+<h2> Feedback form </h2>
+<label for="name">Name:</label>
+<input type="text"id="name" name="name" minlength="3" maxlength="50" required>
+<label for ="Portfolio">Portfolio:</label>
+<input type="URL" id="portfolio"  name="portfolio" required>
+<label for="favColor">Favourite Color:</label>
+<input type="Color" id="favColor"  name="favColor"required>
+<label for="Likeness" >Likeness:</label>
+<input type="Range" id="likeness"  name="likeness" min="1" max="100" required>
 <button type="submit">submit</button>
 </form>
     
